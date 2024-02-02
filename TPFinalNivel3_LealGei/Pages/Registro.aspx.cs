@@ -29,7 +29,7 @@ namespace TPFinalNivel3_LealGei.Pages
                 user.Id=traineeNegocio.insertarNuevo(user);
                 Session.Add("trainee", user);
 
-                emailService.armarCorreo(user.Email, "Te registraste", "Pedazo de Topu!!!");
+                emailService.armarCorreo(user.Email, "Tu Registro Fue Exitoso", "Podes Empezas a usar la pagina");
                 emailService.enviarCorreo();
                 Response.Redirect("Default.aspx");
             }
